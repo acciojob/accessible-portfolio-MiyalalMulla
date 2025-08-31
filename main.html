@@ -4,18 +4,37 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	  <title>My Accessible Portfolio</title>
 </head>
 
 <body>
-	<nav>
-		<img src="image.jpg" alt="photo">
-		<h1></h1>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	</nav>
+	<nav role="navigation">
+    <h1 role="heading">My Portfolio</h1>
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image with role -->
+  <section id="about">
+    <img src="image.jpg" alt="A professional profile photo" role="img">
+    <p>
+      Hello! I am a passionate web developer focused on building accessible and user-friendly websites. 
+      This portfolio showcases some of my best work and experiences.
+    </p>
+  </section>
+
+  <!-- Projects list -->
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+    <ul role="list">
+      <li role="listitem">Accessible Portfolio Website</li>
+      <li role="listitem">E-commerce Application</li>
+      <li role="listitem">Task Management Tool</li>
+    </ul>
+  </section>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
